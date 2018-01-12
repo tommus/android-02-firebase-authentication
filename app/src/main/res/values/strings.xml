@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">Test</string>
+
+	<!-- Facebook. -->
+	<string name="facebook_app_id">1834231820240236</string>
+	<string name="facebook_app_authority">com.facebook.app.FacebookContentProvider1834231820240236</string>
+	<string name="fb_login_protocol_scheme">fb1834231820240236</string>
+
+	<!-- Twitter. -->
+	<string name="com.twitter.sdk.android.CONSUMER_KEY">DpDMZQj4hBArc0Gpm10u9PIT9</string>
+	<string name="com.twitter.sdk.android.CONSUMER_SECRET">j4xtBaU1alWBvRwqWqykjBzfXr0voxmTdMrRRlljFN44RyMSTj</string>
+
+</resources>

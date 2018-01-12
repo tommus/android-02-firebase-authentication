@@ -1,0 +1,63 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="pl.itcraft.test">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:name=".activity.app.TestApp"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+
+		<activity android:name=".activity.splash.SplashActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".activity.login.LoginActivity"
+			android:resizeableActivity="false"
+			android:screenOrientation="sensorPortrait" />
+
+		<meta-data
+			android:name="io.fabric.ApiKey"
+			android:value="40bc74dd04929d0c04bd526dd7d72bd333cdc395" />
+
+		<!-- Facebook. -->
+
+		<activity
+			android:name="com.facebook.FacebookActivity"
+			android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+			android:label="@string/app_name"/>
+
+		<activity
+			android:name="com.facebook.CustomTabActivity"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+
+				<data android:scheme="@string/fb_login_protocol_scheme"/>
+			</intent-filter>
+		</activity>
+
+		<provider
+			android:name="com.facebook.FacebookContentProvider"
+			android:authorities="@string/facebook_app_authority"
+			android:exported="true"/>
+
+		<meta-data
+			android:name="com.facebook.sdk.ApplicationId"
+			android:value="@string/facebook_app_id"/>
+
+	</application>
+</manifest>
